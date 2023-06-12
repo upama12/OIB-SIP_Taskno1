@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-weight: 400;
+    color: #606c38;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+  height: 101px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #606c38;
+  position: relative;
+} 
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.logo img {
+  cursor: pointer;
+}
+.left-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.left-nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.left-nav nav ul li {
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.left-nav nav ul li:hover {
+  color: #c4661f;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+.find-store {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sign-up,
+.log-in {
+  padding: 7px 16px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  
+}
+.find-store {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  font-weight: 900;
+  align-items: center;
+}
+.sign-up {
+  margin-right: 16px;
+}
+.sign-up,
+.log-in {
+  background-color: #424530;
+  color: white;
+  transition: all 0.2s ease;
+}
+.find-store i {
+  padding-right: 8px;
+  font-size: 24px;
+}
+.sign-up:hover,
+.log-in:hover {
+  background-color:  #854621;;
+  color:white;
+  transition: all 0.2s ease;
+}
+.find-store:hover {
+  color:#c4661f ;
+}
+.slider-container {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+  background-image: url("img1.jpg");
+  background-position: center center;
+  background-position: no-repeat;
+  background-size: 100% 100%;
+  animation-name: myanim;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes myanim{
+  0%{background-image: url("img5.jpg");}
+  25%{background-image: url("img2.jpg");}
+  50%{background-image: url("img7.jpg");}
+  75%{background-image: url("img4.jpg");}
+  100%{background-image: url("img1.jpg");}
+}
+
+
